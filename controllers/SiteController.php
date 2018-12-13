@@ -109,7 +109,6 @@ class SiteController extends Controller
     public function actionLeavecomment($id){
       $comment = new Comments();
       if (isset($_POST['add_comment'])) {
-
         $text = $_POST['text_comment'];
         $comment->author_id = Yii::$app->user->identity->id_user;
         $comment->message = $text;
