@@ -2,7 +2,7 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=dd',
+    'dsn' => 'mysql:host=localhost;dbname=dotalife',
     'username' => 'root',
     'password' => '',
     'charset' => 'utf8',

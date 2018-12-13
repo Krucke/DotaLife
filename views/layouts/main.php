@@ -39,8 +39,8 @@ AppAsset::register($this);
         <li class="nav-item active">
           <a class="nav-link" href="/site"><span>D</span>OTA <span>L</span>IFE</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="/site">ГЛАВНАЯ <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="/site">ГЛАВНАЯ <span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/site/news">НОВОСТИ</a>
@@ -80,14 +80,7 @@ AppAsset::register($this);
     </div>
 
   <div class="col-sm-12 f w-100">
-    <p class="float-left">Copyright (C) 2018 <span>Anton</span></p>
-    <div class="signals float-right col col-sm-2">
-      <img src="https://i.ytimg.com/vi/eo58GSsOa9M/maxresdefault.jpg" alt="" class="footer_img" width="30" height="30">
-      <img src="https://i.ytimg.com/vi/eo58GSsOa9M/maxresdefault.jpg" alt="" class="footer_img" width="30" height="30">
-      <img src="https://i.ytimg.com/vi/eo58GSsOa9M/maxresdefault.jpg" alt="" class="footer_img" width="30" height="30">
-      <img src="https://i.ytimg.com/vi/eo58GSsOa9M/maxresdefault.jpg" alt="" class="footer_img" width="30" height="30">
-      <img src="https://i.ytimg.com/vi/eo58GSsOa9M/maxresdefault.jpg" alt="" class="footer_img" width="30" height="30">
-    </div>
+    <p class="float-left mx-auto">Copyright (C) 2018 <span>Anton</span></p>
   </div>
 
 
