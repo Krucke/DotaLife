@@ -41,8 +41,8 @@
    <p class="card-text float-left"><?=$new['date_create']?></p>
    <?php if(!Yii::$app->user->isGuest and Yii::$app->user->identity->isadmin == 1): ?>
      <div class="a float-left">
-       <a href="/site/updatenew?id=<?=$new['id_new']?>" class="a"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-       <a href="/site/deletenew?id=<?=$new['id_new']?>" class="a"><i class="fa fa-minus-circle" aria-hidden="true"></i></a>
+       <a href="/site/updatenew?id=<?=$new['id_new']?>" class="a"><i class="fa fa-pencil" aria-hidden="true" style="color:white;"></i></a>
+       <a href="/site/deletenew?id=<?=$new['id_new']?>" class="a"><i class="fa fa-minus-circle" aria-hidden="true" style="color:white;"></i></a>
      </div>
    <?php endif; ?>
    <a class="float-right" href="/site/readallnew?id=<?=$new['id_new']?>">Читать полностью...</a>
