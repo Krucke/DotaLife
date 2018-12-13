@@ -1,0 +1,85 @@
+.latest-h3{
+  padding: 0;
+  margin: 0;
+  background: #293139;
+  height: 60px;
+  padding-top: 10px;
+}
+.latest{
+  margin: 0;
+  padding: 0;
+}
+.inshort{
+}
+.inshort h6{
+  color: white;
+}
+.inshort h6 a:hover{
+  text-decoration: none;
+  transition: 0.4s;
+}
+.inshort p,span{
+  color: #7C898F;
+}
+.short{
+  margin-bottom: 5px;;
+}
+.tovars{
+  margin-right: 40px;
+}
+.sign input{
+  margin-bottom: 10px;
+  background: inherit;
+}
+.sign input:focus{
+  outline: none;
+  background: inherit;
+}
+.sign button{
+  background: white;
+  font-weight: 700;
+}
+.sign button:hover{
+  transition: 0.4s;
+  background: rgb(200, 200, 200);
+}
+.more_items ul {
+  margin: 0;
+  padding: 0;
+  background: rgba(0,0,0,0.8);
+  display: none;
+}
+.more_items ul li{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.more_items:hover>ul{
+  margin-left: 20px;
+  transition: 0.2s;
+  z-index: 99;
+  position: absolute;
+  display: block;
+}
+.comment-input{
+  background: inherit;
+  border: 1px solid white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.comment-input:focus{
+  background: inherit;
+  color: white;
+}
+.comment-btn{
+  background: rgb(83, 83, 83);
+  color: white;
+}
+.comment-btn:hover{
+  transition: 0.4s;
+  background: rgba(255, 255, 255, 0.3);
+}
+.comment{
+  border-bottom: 2px solid grey;
+  margin-bottom: 15px;
+}

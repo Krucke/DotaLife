@@ -1,0 +1,172 @@
+$pink: #DD163B;
+$pcolor: #7C898F;
+$aborder: #303e47;
+body{
+  font-family: 'Roboto Slab', serif;
+  background-color: #171E22;
+    ul{
+      margin: 0 auto;
+      li{
+        display: inline-block;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        a{
+          font-size: 18px;
+          font-weight: 700;
+          text-decoration: none;
+          color: white;
+          a:hover{
+            text-decoration: none;
+            transition: 0.4s;
+            color: $pink;
+          }
+          span{
+            color: #DD163B;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+h3{
+  margin-top: 5px;
+  font-weight: 700;
+  color: $pink;
+  span{
+    color: white;
+  }
+}
+h5{
+  color: white;
+  font-weight: 700;
+}
+.row{
+  .col-sm-12{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    p,span{
+      color: $pcolor;
+    }
+    h5{
+      a:hover{
+        transition: 0.4s;
+        color: $pink;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.row{
+  .col-sm-10{
+    .card{
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+}
+hr{
+  background: $pink;
+  height: 4px;
+}
+.read{
+  color: white;
+  background: $aborder;
+  padding: 10px;
+  margin: 0;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.read:hover{
+  transition: 0.4s;
+  color: white;
+  background: $pink;
+  text-decoration: none;
+}
+.card{
+  background: inherit;
+  border: 0;
+  .card-body{
+    padding-top: 5px;
+    padding-left: 0;
+    color: $pcolor;
+    span{
+      color:red;
+    }
+    img{
+      margin: 0;
+      padding: 0;
+    }
+    h5{
+      a:hover{
+        transition: 0.4s;
+        color: $pink;
+        text-decoration: none;
+      }
+    }
+    a:hover{
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: $pink;
+}
+.social{
+  background: #293139;
+  height: 70px;
+  h4{
+    color: white;
+    font-weight: 700;
+    padding: 20px;
+    font-size: 21px;
+    span{
+      color: $pink
+    }
+  }
+}
+.after_soc{
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      width: 87px;
+      height: 80px;
+      border: 1px solid black;
+      background: $aborder;
+      padding-top: 25px;
+    }
+    #f{
+      background: rgb(56, 56, 56);
+    }
+  }
+}
+.f{
+  background: black;
+  min-height: 80px;
+  p{
+    color: white;
+    padding-top: 30px;
+    span{
+      color: red;
+    }
+  }
+  .signals{
+    padding-top: 30px;
+    .footer_img{
+      border-radius: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 766px){
+  .s{
+    display: none;
+  }
+}
