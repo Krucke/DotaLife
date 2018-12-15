@@ -7,6 +7,14 @@
     height: 400px;
     border: 3px solid #8FBF00;
   }
+  .edit_img{
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    width: 220px;
+    height: 220px;
+    border-radius: 200px;
+  }
 </style>
 <title>Профиль</title>
 <div class="col-4 float-left sign text-center">
