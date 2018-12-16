@@ -68,7 +68,7 @@
           <div class="card-body">
             <h5 class="card-title"><?=$rate['title_new']?></h5>
             <p class="text-justify"><?=mb_substr($rate['full_text'],0,150)."..."?></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="/site/readallnew?id=<?=$rate['id_new']?>" class="read">Читать полностью</a>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@
           <div class="card-body">
             <h5 class="card-title"><?=$late['title_new']?></h5>
             <p class="text-justify"><?=mb_substr($late['full_text'],0,150)."..."?></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="/site/readallnew?id=<?=$late['id_new']?>" class="read">Читать полностью</a>
           </div>
         </div>
       </div>
