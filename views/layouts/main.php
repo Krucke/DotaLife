@@ -65,7 +65,7 @@ AppAsset::register($this);
           <li class="nav-item more_items">
             <a class="nav-link" href="/site/logout">ИГРОК <?=Yii::$app->user->identity->username?></a>
             <ul>
-              <li class="nav-item"><a href="/site/heroes" class="nav-link text-center">ПРОФИЛЬ</a></li>
+              <li class="nav-item"><a href="/site/profile" class="nav-link text-center">ПРОФИЛЬ</a></li>
               <li class="nav-item"><a href="/site/logout" class="nav-link text-center">ВЫЙТИ</a></li>
             </ul>
           </li>

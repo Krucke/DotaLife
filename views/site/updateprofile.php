@@ -7,8 +7,8 @@ use yii\widgets\ActiveForm;
   }
 </style>
 <title>Профиль-Редактирование</title>
-<h3 class="text-center">Редактирование профиля</h3>
 <?php $form = ActiveForm::begin() ?>
+<h3 class="text-center" style="margin-top:30px;">РЕДАКТИРОВАНИЕ ПРОФИЛЯ</h3>
   <div class="col-4 r float-left">
     <?php if($model->image){?>
     <img src="/uploads/<?= $model->image?>" alt="" class="edit_img">
@@ -16,7 +16,7 @@ use yii\widgets\ActiveForm;
     <img src="../<?=Yii::$app->user->identity->img_profile?>" alt="" class="edit_img">
   <?php } ?>
   <?= $form->field($model, 'image')->fileInput()->label('') ?>
-  <button type="submit" name="add_img" class="btn btn-primary text-center">Загрузить</button>
+  <button type="submit" name="add_img" class="btn btn-primary text-center">ЗАГРУЗИТЬ</button>
 <?php ActiveForm::end() ?>
   </div>
 <form class="" action="/site/updateprofile" method="post">
@@ -31,6 +31,8 @@ use yii\widgets\ActiveForm;
     <input type="text" name="email" value="<?=Yii::$app->user->identity->email?>" class="form-control w-75 float-left inputs">
     <strong class="float-left w-25 labels">О себе</strong>
     <input type="text" name="about" value="<?=Yii::$app->user->identity->about?>" class="form-control w-75 float-left inputs">
-    <button type="submit" name="save" class="btn btn-primary float-right">Сохранить</button>
+    <button type="submit" name="save" class="btn btn-primary float-right">СОХРАНИТЬ</button>
   </div>
 </form>
+<div class="clearfix"></div>
+<div class="back" style="margin-bottom:245px;"></div>

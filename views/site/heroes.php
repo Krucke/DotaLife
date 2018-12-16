@@ -14,7 +14,7 @@ h3{
   <?php
     foreach ($heroesS as $hero) {
   ?>
-  <a href="/site/hero?id=<?=$hero['id_hero']?>"><img src="<?=$hero['img_hero']?>" alt="" class="small_img_hero"></a>
+  <a href="/site/hero?id=<?=$hero['id_hero']?>" title="<?=$hero['name_hero']?>"><img src="<?=$hero['img_hero']?>" alt="" class="small_img_hero"></a>
   <?php } ?>
 </div>
 <h3 class="text-left" style="color: rgb(0, 180, 45);"><img src="../heroes/aglsmall.png" alt="">Ловкость</h3>

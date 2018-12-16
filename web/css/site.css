@@ -131,3 +131,44 @@ a:hover {
 @media screen and (max-width: 766px) {
   .s {
     display: none; } }
+
+.small_img_hero {
+  padding: 8px;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  opacity: 0.8; }
+
+.small_img_hero:hover {
+  transition: 0.4s;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+  opacity: 1; }
+
+.r {
+  margin-top: 100px; }
+  .r .edit_img {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px; }
+  .r .inputs:first-of-type {
+    margin-top: 20px; }
+  .r .inputs {
+    margin-bottom: 20px;
+    background: inherit;
+    color: white;
+    border: 3px solid #DD163B; }
+  .r .labels:first-of-type {
+    margin-top: 20px; }
+  .r .labels {
+    margin-bottom: 30px;
+    font-size: 19px;
+    color: white; }
+  .r .btn {
+    background: white;
+    border: none;
+    color: black;
+    font-weight: 700; }

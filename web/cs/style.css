@@ -27,22 +27,6 @@
 .tovars{
   margin-right: 40px;
 }
-.sign input{
-  margin-bottom: 10px;
-  background: inherit;
-}
-.sign input:focus{
-  outline: none;
-  background: inherit;
-}
-.sign button{
-  background: white;
-  font-weight: 700;
-}
-.sign button:hover{
-  transition: 0.4s;
-  background: rgb(200, 200, 200);
-}
 .more_items ul {
   margin: 0;
   padding: 0;
