@@ -192,6 +192,7 @@ class SiteController extends Controller
         $addnew->date_create = date('Y-m-d');
         $addnew->pre_text = $_POST['pre_text'];
         $addnew->full_text = $_POST['full_text'];
+        $addnew->rated = 0;
         $addnew->save();
         return $this->redirect(["/site/news"]);
       }
