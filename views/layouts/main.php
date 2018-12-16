@@ -46,7 +46,7 @@ AppAsset::register($this);
           <a class="nav-link" href="/site/news">НОВОСТИ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/site/news">КОНТАКТЫ</a>
+          <a class="nav-link" href="/site/contact">КОНТАКТЫ</a>
         </li>
         <li class="nav-item more_items">
           <a class="nav-link" href="/site">БАЗА ЗНАНИЙ</a>

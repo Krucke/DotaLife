@@ -249,15 +249,17 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
 
-            return $this->refresh();
-        }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
+      if (isset($_POST['go'])) {
+        Yii::$app->mailer->compose()
+        ->setTo('simushin2013@yandex.ru')
+        ->setFrom(['simushin2013@yandex.ru' => $_POST['email']])
+        ->setSubject($_POST['title'])
+        ->setTextBody($_POST['text'])
+        ->send();
+        return $this->goBack();
+      }
+      return $this->render('contacts');
     }
 
     /**

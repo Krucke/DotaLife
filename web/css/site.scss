@@ -217,3 +217,38 @@ opacity: 1;
     font-weight: 700;
   }
 }
+.contacts{
+  h3{
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  p{
+    color: rgb(182,182,182);
+  }
+  input,textarea{
+    margin-bottom: 20px;
+    background: inherit;
+    border: 2px solid $pink;
+    color: white;
+    outline: inherit;
+  }
+  input:focus,input:active{
+    background: inherit;
+    outline: none;
+    color: white;
+  }
+  textarea:focus,textarea:active{
+    background: inherit;
+    outline: none;
+    color: white;
+  }
+  button{
+    background: $pink;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 80px;
+  }
+  button:hover{
+    background: lighten($pink, 5);
+  }
+}

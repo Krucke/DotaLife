@@ -172,3 +172,36 @@ a:hover {
     border: none;
     color: black;
     font-weight: 700; }
+
+.contacts h3 {
+  margin-top: 20px;
+  margin-bottom: 25px; }
+
+.contacts p {
+  color: #b6b6b6; }
+
+.contacts input, .contacts textarea {
+  margin-bottom: 20px;
+  background: inherit;
+  border: 2px solid #DD163B;
+  color: white;
+  outline: inherit; }
+
+.contacts input:focus, .contacts input:active {
+  background: inherit;
+  outline: none;
+  color: white; }
+
+.contacts textarea:focus, .contacts textarea:active {
+  background: inherit;
+  outline: none;
+  color: white; }
+
+.contacts button {
+  background: #DD163B;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 80px; }
+
+.contacts button:hover {
+  background: #e92348; }
