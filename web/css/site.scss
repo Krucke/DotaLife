@@ -252,3 +252,29 @@ opacity: 1;
     background: lighten($pink, 5);
   }
 }
+.sign{
+  margin-bottom: 450px;
+  input{
+    margin-bottom: 15px;
+    background: inherit;
+    color: white;
+  }
+  input:hover{
+    background: inherit;
+    color: white;
+  }
+  .si{
+    color: white;
+    background: $aborder;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  .si:hover{
+    transition: 0.4s;
+    color: white;
+    background: $pink;
+    text-decoration: none;
+  }
+}

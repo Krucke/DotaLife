@@ -5,7 +5,7 @@
     <form class="" action="/site/signin" method="post">
       <input type="text" name="login" value="" class="form-control" placeholder="Логин..." required>
       <input type="text" name="password" value="" class="form-control" placeholder="Пароль..." required>
-      <button type="submit" name="sign" class="btn float-right">ВОЙТИ</button>
+      <button type="submit" name="sign" class="btn float-right si">ВОЙТИ</button>
     </form>
   </div>
   <div class="col-sm-5 mx-auto float-right sign">
@@ -15,7 +15,7 @@
       <input type="text" name="" value="" class="form-control" placeholder="Логин" required>
       <input type="text" name="" value="" class="form-control" placeholder="Пароль" required>
       <input type="text" name="" value="" class="form-control" placeholder="Подтверждение пароля" required>
-      <button type="submit" name="button" class="btn float-right">ВОЙТИ</button>
+      <button type="submit" name="button" class="btn float-right si">ВОЙТИ</button>
     </form>
   </div>
 </div>

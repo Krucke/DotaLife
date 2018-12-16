@@ -205,3 +205,25 @@ a:hover {
 
 .contacts button:hover {
   background: #e92348; }
+
+.sign {
+  margin-bottom: 450px; }
+  .sign input {
+    margin-bottom: 15px;
+    background: inherit;
+    color: white; }
+  .sign input:hover {
+    background: inherit;
+    color: white; }
+  .sign .si {
+    color: white;
+    background: #303e47;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    text-decoration: none; }
+  .sign .si:hover {
+    transition: 0.4s;
+    color: white;
+    background: #DD163B;
+    text-decoration: none; }
