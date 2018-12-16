@@ -38,7 +38,7 @@
 <hr class="my-2" style="background: white">
 
 <!-- новости -->
-<h3 class="text-center">ПОСЛЕДНИЕ <span>НОВОСТИ</span></h3>
+<h3 class="text-center">НОВОСТИ</h3>
 <div class="row">
   <?php foreach ($news as $new):?>
   <div class="col-sm-12">
@@ -54,106 +54,43 @@
     </div>
   </div>
 <?php endforeach; ?>
-<hr class="my-2">
-
+</div>
 <!-- статьи -->
-<h3 class="text-center">ПОСЛЕДНИЕ <span>СТАТЬИ</span></h3>
+  <hr class="my-2" style="background: white">
+    <hr class="my-2 w-75" style="background: #DD163B">
 <div class="row">
-  <div class="card col-sm-4 float-left">
-    <img class="card-img-top" src="https://dota2hq.eu/_ph/1/276162889.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="text-left"><a href=""><?=strtoupper("header new header new and some text for news")?></a></h5>
-      <img src="https://fakeimg.pl/30x30/6D0E52" alt="" class="rounded"> by <span>Username</span> in <?=date("M d, Y")?>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="read">READ MORE</a>
-      <div class="clearfix"></div>
-    </div>
+  <div class="col-sm-6 float-left">
+    <h3 class="text-center">САМЫЕ <span>ПРОСМАТРИВАЕМЫЕ</span></h3>
+    <?php foreach($rated as $rate): ?>
+      <div class="col-sm-10 mx-auto">
+        <div class="card w-100">
+          <img class="card-img-top" src="<?=$rate['img_new']?>" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><?=$rate['title_new']?></h5>
+            <p class="text-justify"><?=mb_substr($rate['full_text'],0,150)."..."?></p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+    <?php endforeach; ?>
   </div>
-  <div class="card col-sm-4 float-left">
-    <img class="card-img-top" src="https://wallpaperscave.ru/images/original/17/12-31/games-dota-2-6413.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="text-left"><a href=""><?=strtoupper("header new header new and some text for news")?></a></h5>
-      <img src="https://fakeimg.pl/30x30/6D0E52" alt="" class="rounded"> by <span>Username</span> in <?=date("M d, Y")?>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="read">READ MORE</a>
-      <div class="clearfix"></div>
-    </div>
+  <div class="col-sm-6 float-left">
+    <h3 class="text-center">НОВИНКИ</h3>
+    <?php foreach($latest as $late): ?>
+      <div class="col-sm-10 mx-auto">
+        <div class="card w-100">
+          <img class="card-img-top" src="<?=$late['img_new']?>" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><?=$late['title_new']?></h5>
+            <p class="text-justify"><?=mb_substr($late['full_text'],0,150)."..."?></p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+    <?php endforeach; ?>
   </div>
   <!-- ссылки -->
-  <div class="col-sm-4 s">
-    <div class="social">
-      <h4 class="text-center"><span>WE</span> ARE SOCIAL</h4>
-    </div>
-    <div class="after_soc">
-      <ul>
-        <li id="f" class="float-left"><a href=""><span class="navbar-toggler-icon" style="background-image: url('https://banner2.kisspng.com/20180804/xl/kisspng-website-development-drupal-computer-icons-scalable-drupal-svg-png-icon-free-download-427052-onli-5b6544626662e7.0291968815333632984194.jpg')"></span></a></li>
-        <li class="float-left"><a href=""><span class="navbar-toggler-icon" style="background-image: url('https://banner2.kisspng.com/20180804/xl/kisspng-website-development-drupal-computer-icons-scalable-drupal-svg-png-icon-free-download-427052-onli-5b6544626662e7.0291968815333632984194.jpg')"></span></a></li>
-        <li id="f" class="float-left"><a href=""><span class="navbar-toggler-icon" style="background-image: url('https://banner2.kisspng.com/20180804/xl/kisspng-website-development-drupal-computer-icons-scalable-drupal-svg-png-icon-free-download-427052-onli-5b6544626662e7.0291968815333632984194.jpg')"></span></a></li>
-        <li class="float-left"><a href=""><span class="navbar-toggler-icon" style="background-image: url('https://banner2.kisspng.com/20180804/xl/kisspng-website-development-drupal-computer-icons-scalable-drupal-svg-png-icon-free-download-427052-onli-5b6544626662e7.0291968815333632984194.jpg')"></span></a></li>
-        <li class=" float-left"><a href=""><span class="navbar-toggler-icon" style="background-image: url('https://banner2.kisspng.com/20180804/xl/kisspng-website-development-drupal-computer-icons-scalable-drupal-svg-png-icon-free-download-427052-onli-5b6544626662e7.0291968815333632984194.jpg')"></span></a></li>
-        <li id="f" class="float-left"><a href=""><span class="navbar-toggler-icon" style="background-image: url('https://banner2.kisspng.com/20180804/xl/kisspng-website-development-drupal-computer-icons-scalable-drupal-svg-png-icon-free-download-427052-onli-5b6544626662e7.0291968815333632984194.jpg')"></span></a></li>
-        <li class="float-left"><a href=""><span class="navbar-toggler-icon" style="background-image: url('https://banner2.kisspng.com/20180804/xl/kisspng-website-development-drupal-computer-icons-scalable-drupal-svg-png-icon-free-download-427052-onli-5b6544626662e7.0291968815333632984194.jpg')"></span></a></li>
-        <li id="f" class="float-left"><a href=""><span class="navbar-toggler-icon" style="background-image: url('https://banner2.kisspng.com/20180804/xl/kisspng-website-development-drupal-computer-icons-scalable-drupal-svg-png-icon-free-download-427052-onli-5b6544626662e7.0291968815333632984194.jpg')"></span></a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="clearfix"></div>
 </div>
-  <div class="clearfix"></div>
-  <!-- last and top news -->
-  <hr class="my-2 w-75"><hr class="my-2 w-50" style="background: white;">
-  <!-- <div class="col-sm-5 latest float-left">
-      <h3 class="text-center latest-h3">Последние добавленные</h3>
-      <div class="short">
-        <img src="https://wallpaperscave.ru/images/original/17/12-31/games-dota-2-6413.jpg" alt="" class="float-left" width="100" height="100">
-        <div class="inshort">
-          <h6 class="text-justify"><a href=""><?=strtoupper("header new header new and some text for")?></a></h6>
-          <span><?=date("M d, Y")?></span>
-          <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-      <div class="short">
-        <img src="https://wallpaperscave.ru/images/original/17/12-31/games-dota-2-6413.jpg" alt="" class="float-left" width="100" height="100">
-        <div class="inshort">
-          <h6 class="text-justify"><a href=""><?=strtoupper("header new header new and some text for")?></a></h6>
-          <span><?=date("M d, Y")?></span>
-          <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-      <div class="short">
-        <img src="https://wallpaperscave.ru/images/original/17/12-31/games-dota-2-6413.jpg" alt="" class="float-left" width="100" height="100">
-        <div class="inshort">
-          <h6 class="text-justify"><a href=""><?=strtoupper("header new header new and some text for")?></a></h6>
-          <span><?=date("M d, Y")?></span>
-          <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-  </div>
-  <div class="col-sm-5 latest float-right">
-      <h3 class="text-center latest-h3" style="color: white;">Последние добавленные</h3>
-      <div class="short">
-        <img src="https://wallpaperscave.ru/images/original/17/12-31/games-dota-2-6413.jpg" alt="" class="float-left" width="100" height="100">
-        <div class="inshort">
-          <h6 class="text-justify"><a href=""><?=strtoupper("header new header new and some text for")?></a></h6>
-          <span><?=date("M d, Y")?></span>
-          <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-      <div class="short">
-        <img src="https://wallpaperscave.ru/images/original/17/12-31/games-dota-2-6413.jpg" alt="" class="float-left" width="100" height="100">
-        <div class="inshort">
-          <h6 class="text-justify"><a href=""><?=strtoupper("header new header new and some text for")?></a></h6>
-          <span><?=date("M d, Y")?></span>
-          <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-      <div class="short">
-        <img src="https://wallpaperscave.ru/images/original/17/12-31/games-dota-2-6413.jpg" alt="" class="float-left" width="100" height="100">
-        <div class="inshort">
-          <h6 class="text-justify"><a href=""><?=strtoupper("header new header new and some text for")?></a></h6>
-          <span><?=date("M d, Y")?></span>
-          <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-  </div> -->
 <div class="clearfix"></div>

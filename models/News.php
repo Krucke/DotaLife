@@ -60,4 +60,14 @@ class News extends \yii\db\ActiveRecord
 
       return static::find()->all();
     }
+
+    public function getRated(){
+
+      return $command = Yii::$app->db->createCommand("SELECT * FROM news ORDER BY rated DESC LIMIT 3")->query();
+    }
+
+    public function getLatest(){
+
+      return $command = Yii::$app->db->createCommand("SELECT * FROM news ORDER BY id_new DESC LIMIT 3")->query();
+    }
 }

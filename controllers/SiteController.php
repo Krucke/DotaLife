@@ -71,12 +71,16 @@ class SiteController extends Controller
     {
         $model = new News();
         $news = $model->getNews();
-        return $this->render('index',['news' => $news]);
+        $rated = $model->getRated();
+        $latest = $model->getLatest();
+        return $this->render('index',['news' => $news,'rated' => $rated,'latest' => $latest]);
     }
 
     public function actionReadallnew($id){
 
       $new = News::findOne($id);
+      $new->rated += 1;
+      $new->save();
       $comment = Comments::find()->where(['new_id' => $id])->all();
       return $this->render('allnew',['new' => $new,'comments' => $comment]);
     }
